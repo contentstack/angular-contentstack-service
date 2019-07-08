@@ -11,7 +11,7 @@ Run the following command to install `angular-cli` globally:
 
     npm install -g @angular/cli
 
-Next, you need to create an Angular service example (named `contentstack-service-example`) and build and serve it. To do this, use the following command lines:
+Next, you need to create an Angular service example (named contentstack-service-example), and build and serve it. To do this, use the following command lines:
 
     ng new contentstack-service-example
     cd contentstack-service-example
