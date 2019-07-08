@@ -71,19 +71,20 @@ You can use the Contentstack service as follows:
 >       styleUrls: ['./app.component.css']
 >     })
 >     export class AppComponent {
->       constructor(private cs: ContentstackService) {}
->       
->       title = 'angular-starter';
->       entryText:any = {};
->       getEntry() {
->     		this.cs.stack().ContentType('home').Entry('blt12345qsq6789').fetch()
->     		.then(entry => {
->     		       this.entryText = entry.toJSON();
->         }, err => {
->         });
-> 
->       ngOnInit() {
->         this.getEntry()
+>         constructor(private cs: ContentstackService) {}
+>         title = 'angular-starter';
+>         entryText:any = {};
+>         getEntry() {
+>		        this.cs.stack().ContentType('footer').Entry('blt2283c80248da490d').fetch()
+>		        .then(entry => {
+>		            this.entryText = entry.toJSON();
+>               }, err => {
+>               });
+>
+>         }
+>         ngOnInit() {
+>           this.getEntry()
+>         }
 >     }
 
 Try out all methods and queries mentioned in the [JavaScript SDK Query](https://www.contentstack.com/docs/platforms/javascript-browser/api-reference/) documentation.
